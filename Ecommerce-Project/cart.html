@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making sagor expresss">
+    <title>Ecommerce Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- font awesome cdn -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+
+    <nav id="menu">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a>
+            </li>
+
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+
+            <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link">
+                    <img class="profile-icon" src="./images/Ironman.jpeg" alt="profile icon">
+                </a></li>
+        </ul>
+
+
+        <ul class="nav_lower flex-space-around">
+            <li class="nav_list">
+                <a href="contact.html" class="nav_brand nav_link">Sagor Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="cart.html" class=" nav_brand nav_link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    cart 2 products - 124.40$
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+
+
+    <!-- navbar ends here -->
+
+    <main class="container">
+
+        <h2 class="page-title">🛒 Your Shopping Cart</h2>
+
+        <div class="cart">
+
+            <!-- LEFT SIDE (ITEMS) -->
+            <div class="cart_items">
+
+                <div class="cart_header">
+                    <h2>Shopping Cart (2 items)</h2>
+
+                    <div class="cart_actions">
+                        <label>
+                            <input type="checkbox"> Select All
+                        </label>
+
+                        <button class="btn danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <button class="btn secondary">Shop More</button>
+                    </div>
+                </div>
+
+                <!-- ITEM 1 -->
+                <div class="cart_item">
+                    <input type="checkbox">
+
+                    <img src="./Images/tab.avif" class="cart_img">
+
+                    <div class="cart_info">
+                        <h3>Mac Tablet</h3>
+                        <p class="price">$224</p>
+                        <p class="shipping">Shipping: $24.67</p>
+                    </div>
+
+                    <div class="cart_action_box">
+
+                        <button class="btn danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <div class="qty">
+                            <button>-</button>
+                            <span>3</span>
+                            <button>+</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="cart_item">
+                    <input type="checkbox">
+
+                    <img src="./Images/tab.avif" class="cart_img">
+
+                    <div class="cart_info">
+                        <h3>Mac Tablet</h3>
+                        <p class="price">$224</p>
+                        <p class="shipping">Shipping: $234.59</p>
+                    </div>
+
+                    <div class="cart_action_box">
+
+                        <button class="btn danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <div class="qty">
+                            <button>-</button>
+                            <span>3</span>
+                            <button>+</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE (PAYMENT) -->
+            <div class="cart_payment">
+
+                <h3>Order Summary</h3>
+
+                <div class="summary">
+                    <p>Subtotal <span>$448</span></p>
+                    <p>Shipping <span>$50</span></p>
+                    <hr>
+                    <h4>Total <span>$498</span></h4>
+                </div>
+
+                <button class="checkout_btn">Proceed to Checkout</button>
+
+
+                <div class="cart_payment-methods card">
+
+                    <h4>Payment Methods</h4>
+
+                    <div class="payment_icons">
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-amex"></i>
+                        </div>
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-apple-pay"></i>
+                        </div>
+
+                        <div class="icon_box">
+                            <i class="fab fa-cc-amazon-pay"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe to Newsletter
+
+
+                <input type="email" id="subscribe" name="subscribe" class="footer_input"
+                    placeholder="Your Email Address">
+                <button class="btn btn-subscribe">Subscribe</button>
+
+            </label>
+
+        </div>
+        <div>
+
+            <p>&copy; Copyright 2026 Sagor Saha . All right reserved</p>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+    <!-- footer ends here  -->
+
+
+
+
+
+</body>
+<script src="./script/index.js"> </script>
+
+<script src="./script/cart.js"> </script>
+
+</html>

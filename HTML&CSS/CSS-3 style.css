@@ -1,0 +1,11 @@
+h1 {
+    color: green;
+}
+
+h1:nth-child(2) {
+    color: rgb(241, 155, 17);
+}
+
+p {
+    font-size: 16px;
+}

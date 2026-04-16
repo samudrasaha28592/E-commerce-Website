@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Dropdown</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 🔵 Navbar */
+        .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* 🟣 Dropdown Container */
+        .dropdown-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* 🟢 Dropdown Box */
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 140px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+
+            /* animation */
+            opacity: 0;
+            transform: translateY(10px);
+            transition: 0.3s;
+
+            visibility: hidden;
+        }
+
+        /* 🔥 Show Dropdown */
+        .dropdown-container:hover .dropdown-content {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        /* 🔘 Dropdown Links */
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background: #2a5298;
+            color: white;
+            padding-left: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+
+        <div class="dropdown-container">
+            <a href="#">Contact Me ⬇</a>
+            <div class="dropdown-content">
+                <a href="#">Email</a>
+                <a href="https://www.facebook.com/somudrasahasagor">Facebook</a>
+            </div>
+        </div>
+
+        <a href="#">About Me</a>
+    </div>
+
+</body>
+
+</html>

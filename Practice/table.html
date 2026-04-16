@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <style>
+        p::first-letter {
+            color: red;
+            font-size: 50px;
+        }
+
+        p:hover {
+
+            color: blueviolet
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: chocolate;
+
+            body::before {
+                background-color: brown;
+                display: inline-block;
+                height: 30px;
+                width:100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Erat takimata dolor dolor magna magna eirmod clita, diam invidunt nonumy sit dolor sea takimata sit sanctus
+        eos, voluptua sed.</p>
+</body>
+
+</html>

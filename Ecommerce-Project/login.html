@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making sagor expresss">
+    <title>Ecommerce Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- font awesome cdn -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a>
+            </li>
+
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+
+            <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link">
+                    <img class="profile-icon" src="./images/Ironman.jpeg" alt="profile icon">
+                </a></li>
+        </ul>
+
+
+        <ul class="nav_lower flex-space-around">
+            <li class="nav_list">
+                <a href="contact.html" class="nav_brand nav_link">Sagor Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="/cart.html" class=" nav_brand nav_link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    cart 2 products - 124.40$
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+
+
+    <!-- navbar ends here -->
+
+<main class="login_page">
+
+    <div class="container">
+
+        <div class="form_box">
+
+            <h2>Welcome Back 👋</h2>
+
+            <form>
+
+                <div class="input_group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+
+                <div class="input_group">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+
+            <p class="login_link">
+                Don't have an account? <a href="register.html">Register</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe to Newsletter
+
+
+                <input type="email" id="subscribe" name="subscribe" class="footer_input"
+                    placeholder="Your Email Address">
+                <button class="btn btn-subscribe">Subscribe</button>
+
+            </label>
+
+        </div>
+        <div>
+
+            <p>&copy; Copyright 2026 Sagor Saha . All right reserved</p>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+    <!-- footer ends here  -->
+
+
+
+
+
+</body>
+<script src="./script/index.js"> </script>
+
+</html>

@@ -1,0 +1,161 @@
+/* PROFILE PAGE BACKGROUND */
+.profile_page {
+    min-height: 100vh;
+    padding: 40px;
+
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #00c9ff, #92fe9d);
+    background-size: 800% 800%;
+    animation: gradientMove 12s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* CONTAINER */
+.profile_container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* LEFT CARD */
+.profile_card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeUp 1s ease;
+}
+
+/* PROFILE IMAGE */
+.profile_img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid white;
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+.profile_img:hover {
+    transform: scale(1.1);
+}
+
+/* NAME */
+.profile_card h2 {
+    margin-bottom: 5px;
+}
+
+/* EMAIL */
+.email {
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.edit_btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit_btn:hover {
+    transform: scale(1.05);
+}
+
+/* RIGHT SIDE */
+.profile_details {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+
+    border-radius: 20px;
+    padding: 30px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeUp 1.2s ease;
+}
+
+/* TITLE */
+.profile_details h2 {
+    margin-bottom: 20px;
+}
+
+/* INFO BOX */
+.info_box {
+    margin-bottom: 15px;
+    padding: 12px;
+
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+}
+
+.info_box:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* LABEL */
+.info_box span {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* VALUE */
+.info_box p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}

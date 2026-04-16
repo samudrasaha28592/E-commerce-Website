@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Card</title>
+    <style>
+        .card-container {
+            box-sizing: border-box;
+            display: flex;
+
+
+            background-color: cadetblue;
+            padding: 20px 0;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 1px 2px 5px black;
+
+
+        }
+
+        .img-style {
+            width: 100%;
+
+
+        }
+
+        .card-body {
+            padding: 5px;
+            background-color: blueviolet;
+        }
+
+        .card-body .card-title {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+
+
+        }
+
+        .card-body .card-desc {
+            padding: 5px;
+            color: white;
+            line-height: 1.5;
+
+        }
+
+        .card {
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 1px 2px 5px black;
+            border-radius: 18px;
+            overflow: hidden;
+            transform: translateY(0) scale(1);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            background: linear-gradient(120deg, #4a00e0, #8e2de2);
+            animation: card-entry 0.8s ease both;
+        }
+
+        .card:hover {
+            box-shadow: 0 20px 30px rgba(0, 0, 80, 0.45);
+            transform: translateY(-10px) scale(1.04);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            animation: float 3.5s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .card-body {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+        }
+
+        .card-body .card-title {
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-body .card-desc {
+            padding: 10px;
+            color: #f0f1f7;
+            line-height: 1.5;
+        }
+
+        @keyframes card-entry {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.94);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(24px, 18px);
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img class="img-style" src="Ironman.jpeg" alt="">
+
+            <div class="card-body">
+                <div class="card-title">
+                    Python Programming
+
+                </div>
+                <div class="card-desc">
+                    <p>Aliquyam aliquyam et dolor eos sed diam sed eirmod sea. Eos sadipscing voluptua gubergren sit
+                        sit,
+                        lorem lorem labore est.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

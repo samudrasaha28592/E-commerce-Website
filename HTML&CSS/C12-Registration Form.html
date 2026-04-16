@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        div label{
+            margin: 10px;
+            color: blue;
+     
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 align="center">Registration Form</h2>
+
+    <form action="https://formspree.io/f/mzdjrbok" method="POST">
+
+        <div>
+            <label for="fullname">FullName</label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div> <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div> <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div> <br>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+
+        </div> <br>
+
+        <div>
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" id="photo">
+
+        </div> <br>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+        </div> <br>
+        <div>
+            <label for="religion">Religion</label>
+            <input type="checkbox" name="c1" id="Hindu" value="hindu">Hindu
+            <input type="checkbox" name="c2" id="Muslim" value="muslim">Muslim
+            <input type="checkbox" name="c3" id="chiristan" value="chiristan">Chiristan
+
+        </div> <br>
+        <div>
+            <label for="department">Department</label>
+            <select name="department">
+                <option value="CSE" selected>CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECH">MECH</option>
+            </select>
+        </div> <br>
+        <div>
+            <label for="message">Message</label> <br>
+            <textarea cols="15" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear" disabled>
+            <!Disable clear button>
+        </div>
+
+    </form>
+</body>
+
+</html>
